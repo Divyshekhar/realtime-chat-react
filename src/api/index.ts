@@ -1,6 +1,7 @@
-var socket = new WebSocket("ws://localhost:8080/ws");
+const url = "https://realtime-chat-go.onrender.com"
+var socket = new WebSocket("wss://realtime-chat-go.onrender.com/ws");
 let connect = (cb: (msg: { body: string; type: number }) => void) => {
-    const socket = new WebSocket("ws://localhost:8080/ws");
+    const socket = new WebSocket("wss://realtime-chat-go.onrender.com/ws");
 
     console.log("connecting");
 
