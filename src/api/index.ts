@@ -1,4 +1,3 @@
-const url = "https://realtime-chat-go.onrender.com"
 var socket = new WebSocket("wss://realtime-chat-go.onrender.com/ws");
 let connect = (cb: (msg: { body: string; type: number }) => void) => {
     const socket = new WebSocket("wss://realtime-chat-go.onrender.com/ws");
